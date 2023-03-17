@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+    
+}
+@media only screen and (max-width: 600px) {
+
+  #img {
+    width:205px;
+    height: 200px;
+    object-fit:contain;
+    align-items: center;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .con{
+    font-size: 8px;
+  }
+  b{
+    font-size: 13px;
+    margin-right: 30px
+  }
+  #cardo{
+    height: 228px;
+  }
+  #conss{
+    height: 250px;
+  }
+  #h4{
+    text-align: left;
+    font-size: 12px;
+  }
+  #divo{
+       margin-left:0px;
+  }
+}
+@media only screen and (max-width: 992px) {
+
+  #img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    align-items: center;
+
+  }
+  #btno{
+    margin-left: 45px;
+  }
+
+  
+}
+@font-face{
+  font-family:rays;
+  src:url("nasalization-rg.otf")
+}
+.header-bg {
+    background: linear-gradient(rgba(0, 0, 0, .5),#000), url("disco.jpg") center center no-repeat;
+    background-size: cover;
+}
+footer {
+
+
+        bottom: 0;
+
+        left: 0;
+
+        right: 0;
+
+        background: #000;
+
+        height: 250px;
+
+        width: 100%;
+
+        padding-top: 20px;
+
+        color: #fff;
+}
+
+.footer-content {
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        flex-direction: column;
+}
+.socials .so{
+  display: -webkit-inline-box;
+  margin: 4px;
+  color: orangered;
+  margin-right: 30px;
+}
+#spn{
+        color: white;
+}
+.floating-container {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+  z-index: 1000;
+}
+
+.floating-button {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: limegreen;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 65px;
+  text-align: center;
+  font-size: 23px;
+  
+  box-shadow: 0 10px 25px -5px rgba(44, 179, 240, 0.6);
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.floating-button:hover{
+  background:lime;
+  background-size: cover;
+  background-position: center;
+}
+#scroll-down-animation {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

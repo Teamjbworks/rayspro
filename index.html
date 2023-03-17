@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RAYS PRO</title>
+  <link rel="shortcut icon" type="image/x-icon" href="rays.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="dist/hamburgers.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <script src="main.js">main.js</script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.scss">
+  <link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+     
+     <div class="loading container-fluid" style="width:100%;height: 100%; background:black;z-index: 999999999;position:fixed;">
+<div class="loader">
+  <div class="cell d-0"></div>
+  <div class="cell d-1"></div>
+  <div class="cell d-2"></div>
+
+  <div class="cell d-1"></div>
+  <div class="cell d-2"></div>
+  
+  
+  <div class="cell d-2"></div>
+  <div class="cell d-3"></div>
+  
+  
+  <div class="cell d-3"></div>
+  <div class="cell d-4"></div>
+  
+  
+</div>
+
+     </div>
+
+
+        <nav class="navbar navbar-expand-lg bg-black fixed-top" id="nav">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-white" href="#" id="brnd"><img src="RAYS.png" alt="" style="width:100px; height:100%; margin-left: 20px;"></a>
+
+            <button class="menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+              <svg width="40" height="40" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+              </svg>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">About</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#spec">Specifications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="#contact">Contact</a>
+                </li>
+                <li class="nav-item px-4">
+                      <label class="switch">
+  <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+  <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+  <input type="checkbox" class="input" onclick="myFunction()" id="mode-toggle" class="light-mode">
+  <span class="slider"></span>
+</label>
+                </li>
+              </ul>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <br>
+        <br>
+        <div class="hero" id="hero">
+              <div class="container-fluid bg-dark p-0 mb-5">
+      <div class="row g-0 flex-column-reverse flex-lg-row">
+        <div class="col-lg-6 p-0 wow fadeIn" data-aos="fade-in">
+          <div
+            class="header-bg h-100 d-flex flex-column justify-content-center p-5"
+          >
+            <h1 class="display-4 text-light mb-5 px-sm-5">
+              Enjoy Special Day With Your RAYS PRO 
+            </h1>
+            <div class="d-flex align-items-center pt-4 animated slideInDown">
+              <a href="" class="btn btn-primary py-sm-3 px-5 px-sm-5 me-5"
+                 id="btno" onclick="btn()">Book Now</a
+              >
+
+             
+            </div>
+          </div>
+        </div>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="p1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="p2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="p3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+      </div>
+<div class="container-fluid bg-black">
+              <div class="container-xxl py-5">
+      <div class="container" id="about">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <p data-aos="fade-up"><span class="text-primary me-2">#</span>WELCOME TO RAYS PRO</p>
+            <h1 class="display-5 mb-4" data-aos="fade-up">
+              Let's make a wave with
+              <span class="text-primary" style="font-family: rays">RAYS PRO</span> !
+            </h1>
+            <p class="mb-4" data-aos="fade-up">
+              Rays Pro Lights Sounds and Event Planner is a professional event planning company located in Kottarakkara, Neduvathoor, Kerala. They specialize in providing lighting, sound, and decoration services for weddings, corporate events, and other occasions. Their experienced team works closely with clients to create custom event designs that reflect their style and vision. Rays Pro uses high-quality equipment and technology to ensure a seamless event experience. With a focus on customer satisfaction, Rays Pro is committed to giving you the look that you want. For exceptional event planning services, choose Rays Pro Lights Sounds and Event Planner.
+            </p>
+            <h5 class="mb-3" data-aos="fade-up">
+              <i class="far fa-check-circle text-primary me-3"></i>Stage Lights and Sounds 
+            </h5>
+            <h5 class="mb-3" data-aos="fade-up">
+              <i class="far fa-check-circle text-primary me-3"></i>Event planning 
+            </h5>
+            <h5 class="mb-3" data-aos="fade-up">
+              <i class="far fa-check-circle text-primary me-3"></i>Professional
+              workings 
+            </h5>
+            <h5 class="mb-3" data-aos="fade-up">
+              <i class="far fa-check-circle text-primary me-3"></i>Kerala's No.1 choice 
+            </h5>
+            <a class="btn btn-primary py-3 px-5 mt-3" href="" data-aos="fade-up" onclick="btno()">Read More</a>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="img-border">
+              <img class="img-fluid" src="RAYS.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+              </div>
+        <div class="container-fluid bg-white text-black">
+          <div class="container-xxl py-5" id="spec">
+            <div class="container">
+              <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <p data-aos="fade-up"><span class="text-primary me-2">#</span> OUR SPECIFICATIONS</p>
+                  <h1 class="display-5 mb-4" data-aos="fade-up">
+                    Treating with great 
+                    <span class="text-primary" style="font-family: rays">SPECIFICATIONS</span> !
+                  </h1>
+                  <br>
+                  <div class="container-sm">
+                    <div class="row" style="align-items: center; display: flex;">
+                      <div class="col" data-aos="fade-up">
+                        <img src="shooting-star.gif" id="img" />
+                      </div>
+                      <br>
+                      <div class="col" style="margin-top: 20px;" data-aos="fade-up">
+                        <h3 id="h3">Immersive Experience</h3>
+                        <p> Rays Pro will transport you to another dimension with their mind-bending display of lights and sounds, creating an unforgettable immersive experience!</p>
+                      </div>
+                    </div>
+                                </div>
+                                <div class="container-sm" style="margin-top: 40px">
+                                  <div class="row" style="align-items: center; display: flex;">
+                                    <div class="col" data-aos="fade-up">
+                                      <img src="travel.gif" id="img" />
+                                    </div>
+                                    <br>
+                                    <div class="col" style="margin-top: 20px;" data-aos="fade-up">
+                                      <h3 id="h3">All Kerala Service</h3>
+                                      <p>You can experience the magic of sound and light with RAYS PRO - your one-stop solution for unforgettable events and programs across Kerala</p>
+                                    </div>
+                                  </div>
+                                                                  <div class="container-sm" style="margin-top: 40px">
+                                                                    <div class="row" style="align-items: center; display: flex;">
+                                                                      <div class="col" data-aos="fade-up">
+                                                                        <img src="speakers.gif" id="img" />
+                                                                      </div>
+                                                                      <br>
+                                                                      <div class="col" style="margin-top: 20px;" data-aos="fade-up">
+                                                                        <h3 id="h3">Professionalism</h3>
+                                                                        <p>Experience the ultimate audiovisual experience with RAYS PRO - your go-to for professional lighting and sound at your event</p>
+                                                                      </div>
+                                                                    </div>
+                                                                    <br>
+                                  
+                                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          
+          <div class="container-fluid bg-black">
+            <div class="row">
+              <div class="col">
+                          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="img-border">
+                              <img class="img-fluid" src="RAYS.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="col">
+  <div class="container" id="contact" data-aos="slide-up">
+    <div class="container">
+      <h1 id="nxt1" class="text-center">Get in touch</h1>
+      <br>
+      <br>
+      <br>
+      <form action="https://sheetdb.io/api/v1/y0s3408dtk446" method="POST" id="sheetdb-form" onsubmit="form()">
+  
+        <label for="fname">First Name <span>*</span></label>
+        <input type="text" id="fname" name="data[firstname]" placeholder="Your name.." required>
+  
+        <label for="lname">Last Name <span>*</span></label>
+        <input type="text" id="lname" name="data[lastname]" placeholder="Your last name.." required>
+  
+        <label for="lname">E-mail <span>*</span></label>
+        <input type="email" id="lname" name="data[Email]" placeholder="Your E-mail.." required>
+  
+        <label for="lname">Phone number <span>*</span></label>
+        <input type="tel" id="lname" name="data[Phone number]" placeholder="Your Phone number.." maxlength="10" required>
+  
+        <label for="country">District </label>
+        <select id="country" name="data[District]" required>
+          <option>Kollam</option>
+  
+        </select>
+  
+        <label for="country">Work <span>*</span></label>
+        <select id="country" name="data[Place]" required>
+          <option>Choose any one</option>
+          <option value="Event">Event planning</option>
+          <option value="Stage work">Stage works</option>
+          <option value="wedding work">Wedding works</option>
+  
+        </select>
+  
+        <label for="subject" required>message</label>
+  
+        <textarea id="subject" name="data[Message]" placeholder="Write something.." style="height:200px"></textarea>
+  
+        <input type="submit" onclick="btn3()" value="Submit form">
+  
+      </form>
+    </div>
+  
+  </div>
+
+</div>
+
+                          </div>
+              </div>
+              
+            </div>
+              <footer data-aos="fade-in">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+            
+                <div class="container-fluid ">
+                  <div class="footer-content">
+                    <h3 class="text-center fs-4" style="font-family: rays">RAYS PRO</h3>
+            
+                    <p class="text-center">GIVING YOU THE LOOK THAT YOU WANT </p>
+            
+                    <ul class="socials">
+            
+                      <li class="so"><a href="#" class="a"><i class="fa fa-facebook"></i></a></li>
+            
+                      <li class="so"><a href="#" class="a"><i class="fa fa-twitter"></i></a></li>
+                      <li class="so"><a href="#" class="a"><i class="fa fa-instagram"></i></a></li>
+                      <li class="so"><a href="#" class="a"><i class="fa fa-whatsapp"></i></a></li>
+                      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    </ul>
+                  </div>
+            
+                  <p class="text-center " id="to">Copyright &copy 2023 RAYS PRO All rights reserved Designed and developed by Oximorus.</p>
+                </div>
+            
+            
+            
+            
+              </footer>
+          </div>
+          
+
+
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+</body>
+</html>
